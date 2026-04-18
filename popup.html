@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phishing Detector</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2 class="title">🔐 SafeCheck</h2>
+    <p class="subtitle">AI Phishing Detection</p>
+
+    <div class="card">
+
+        <div class="label">Current URL</div>
+        <div id="urlBox" class="url-box">Click button to scan...</div>
+
+        <button id="checkBtn" class="btn">Analyze</button>
+
+        <div id="loader" class="loader hidden"></div>
+
+        <div id="resultBox" class="result hidden">
+            <div id="status" class="status"></div>
+
+            <div class="confidence">
+                <span id="confidenceText">0%</span>
+                <div class="bar">
+                    <div id="fill"></div>
+                </div>
+            </div>
+
+            <div class="explain">
+                <div><b>Reason:</b> <span id="reason"></span></div>
+                <div><b>Theory:</b> <span id="theory"></span></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
